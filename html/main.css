@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+}
+.note {
+    position:relative;
+    background-image: url(note.jpg);
+    background-size:100%;
+    height: 55vw;
+    overflow: hidden;
+    background-repeat: no-repeat; 
+     
+}
+
+.logo {
+    margin-top: 94px;
+    margin-left: 580px;
+    
+    
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    max-width: 900px;
+    margin: 50px auto 0px auto;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 60px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 2px;
+}
+
+.column img {
+    margin-top: 4px; 
+    vertical-align: middle;
+    width:100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+.cover {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 4;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 97%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.cover:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 55px;
+  font-family: 'Mr De Haviland', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heart {
+    margin-left: 1050px;
+    margin-top: -50px;
+    transform:rotate(-20deg)
+}
